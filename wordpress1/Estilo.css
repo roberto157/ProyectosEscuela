@@ -1,0 +1,92 @@
+@charset "utf-8"
+/* CSS Documento*/
+
+body {
+	margin: 0; /* Margen superior 0 pixeles */
+	background-color: red; /*#FFFBD6	/* Color de fondo */
+	margin-left: auto; 
+	margin-right: auto; 	
+}  
+
+header { /*Encabezado*/
+	width: 800px; /*Ancho */
+	height: 100px; /*Alto*/
+	background-color: #FFFBD6; /* Color de fondo del encabezado */
+	margin:0 auto; /* Centrado en el body */
+	font-size: 16px; /* Tamaño de letra */
+	background-image: url("logo23.png");	
+}
+
+nav { /*Menu*/
+	width: 800px; /*Ancho */
+	height: 35px; /*Alto*/
+	background-color:red; /* Color de fondo del menu */
+	margin:0 auto; /* Centrado en el body */
+}
+
+section { /*Contenido principal*/
+	width: 800px; /*Ancho */
+	/*height: 460px; /*Alto*/
+	height: auto;
+	/*height: auto;*/
+	background-color: #FFFBD6; /* Color de fondo de section */
+	margin:0 auto; /* centrada en el body */
+	/*background-image: url("imagenes/encabezado.jpg");*/
+}
+
+footer { /*Pie de pagina*/
+	width: 800px; /*Ancho */
+	height: 40px; /*Alto*/
+	background-color: #FF6600; /* Color de fondo del pie de pagina */
+	color: white; /* Color de texto*/
+	text-align: center;  /* Alineacion de texto centrado*/
+	margin:0 auto; /* Centrado en el body */
+}
+
+#menu-wrapper ul {
+	padding: 0; /* Relleno (espacio del lado izquiedo)  0 pixeles */
+	list-style: none; /*Ningun estilo de lista */	
+}
+
+#hmenu > li {
+	display: inline-block; /* Posicionar en linea y en bloque los elementos del menu*/
+}
+
+#hmenu >li >a {
+	display: block; /*colocación en bloques */
+	padding: 5px 5px; /*Espacio vertical y horizontal entre los elementos del menu */
+	float: auto; 
+}
+
+li ul {
+	position: absolute;
+	display: none;
+}
+
+.sub-menu a{
+	display: block; /* Lo elementos del  submenu se muestran en bloque vertical*/
+	padding: 5px 5px; /*Espacio vertical y horizontal entre los elementos del submenu */
+	width: 130px; /*Ancho de los elemntos del menu */	
+}
+
+li:hover ul{
+	display: block;
+}
+
+#menu-wrapper, li ul {
+	background: #000; /*Color de fondo de los elementos del menu*/
+}
+
+#hmenu {
+	width: 800px; /*Ancho del menú */
+	margin: 0 auto;
+}
+
+#hmenu a{
+	color: white; /* Color de texto*/
+	text-decoration: none;
+}
+
+#hmenu li:hover {
+	background-color: #CC3300; /*Color que se muestra al pasar sobre los elementos del menu*/
+}
